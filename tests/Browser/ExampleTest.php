@@ -13,7 +13,7 @@ class ExampleTest extends DuskTestCase
      *
      * @return void
      */
-    public function testUiLoad()
+    public function testUiLoad()//test that user is able to see the heading in browser on going to the url
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/')
@@ -21,7 +21,7 @@ class ExampleTest extends DuskTestCase
         });
     }
     
-    public function testDropdownContents()
+    public function testDropdownContents()//test that in the browser, the dropdown values to filter HDD types are correct
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/')
@@ -29,7 +29,7 @@ class ExampleTest extends DuskTestCase
         });
     }
     
-    public function testTableVisibility()
+    public function testTableVisibility()//test that the table is visible on page load
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/')

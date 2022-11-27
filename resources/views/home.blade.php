@@ -107,6 +107,7 @@
                 columns: [{ data: 0 },{ data: 1 },{ data: 2 },{ data: 3 },{ data: 4 },{ data: 5 },{ data: 6 },{ data: 7 },{ data: 8 }],
             });
             
+            //HDD types dropdown filter start
             var table = $('#filterTable').DataTable();
             $("#filterTable_filter.dataTables_filter").append($("#categoryFilter"));
             var categoryIndex = 0;
@@ -131,7 +132,9 @@
                 table.draw();
               });
               table.draw();
+              //HDD types dropdown filter end
               
+              //Location dropdown filter start
               var table2 = $('#filterTable').DataTable();
                 $("#filterTable_filter.dataTables_filter").append($("#categoryFilter2"));
                 var categoryIndex2 = 0;
@@ -156,7 +159,9 @@
                 table2.draw();
               });
               table2.draw();
+              //Location dropdown filter end
               
+              //RAM checkbox filter start
               var table3 = $('#filterTable').DataTable();
               
               $.fn.dataTable.ext.search.push(
@@ -180,7 +185,9 @@
                 table3.draw();
               });
               table3.draw();
+              //RAM checkbox filter end
               
+              //Storage slider filter start
               var custom_values = [0, 250, 500, 1000, 2000, 3000, 4000, 8000, 12000, 24000, 48000, 72000];
               var values_refined = ['0', '250GB', '500GB','ITB','2TB','3TB','4TB','8TB','12TB','24TB','48TB','72TB'];
               var my_from = custom_values.indexOf(0);
@@ -221,8 +228,7 @@
                 table4.draw();
             });
             table4.draw();
-            
-   
+            //Storage slider filter end   
             
          </script>
 
