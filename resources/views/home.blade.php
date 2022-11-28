@@ -77,7 +77,7 @@
                     <th>HDD</th>
                     <th>Location</th>
                     <th>Price</th>
-                    <th>Refined RAM</th>
+                    <th>RAM(GB)</th>
                     <th>HDD Type</th>
                     <th>HDD capacity</th>
                     <th>HDD capacity(GB)</th>
