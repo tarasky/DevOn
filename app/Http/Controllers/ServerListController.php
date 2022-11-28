@@ -31,7 +31,7 @@ class ServerListController extends Controller
         }
         
         //$path = storage_path().'\documents\LeaseWeb_servers_filters_assignment.xlsx';
-        $path = storage_path().'/LeaseWeb_servers_filters_assignment.xlsx';
+        $path = 'LeaseWeb_servers_filters_assignment.xlsx';
         $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($path);
 
         $spreadsheet->setActiveSheetIndex(0);
